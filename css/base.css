@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
+:root{
+  /* Colores */
+  --color-primary: #0B6E99;
+  --color-secondary: #27A79A;
+  --color-accent: #FF6B5A;
+  --color-text: #1F2933;
+  --color-muted: #6B7280;
+  --color-bg: #FBFBFD;
+  --color-surface: #E6EEF2;
+  --color-error: #D64545;
+
+  /* Tipografía */
+  --font-family-heading: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-family-body: "Roboto", "Inter", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  /* Sizes (móvil) */
+  --fs-h1: 22px;
+  --fs-h2: 18px;
+  --fs-body: 15px;
+  --fs-small: 13px;
+  --fs-button: 15px;
+
+  --line-h-body: 1.5;
+  --line-h-heading: 1.2;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(31,41,51,0.08);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--color-bg);
+  color:var(--color-text);
+  font-family:var(--font-family-body);
+  font-size:var(--fs-body);
+  line-height:var(--line-h-body);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
+  width: 100%;
+  height: auto;
+}
+
+.home{
+    width: 100%;
+    height: auto;
+    border: 1px solid ;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+}
+.home nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--color-surface);
+}
+
+.home nav div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    white-space:pre;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+}
+
+.home nav section{
+    width: 100%;
+    height: 3rem;
+}
+.home h1{
+    margin: 0;
+    padding: 0;
+    font-size: var(--fs-h1);
+    color: darkcyan;
+}
+
+.home .burguer{
+    width: 10%;
+    height: 10vw;
+    background-color: rebeccapurple !important;
+}
+
+.home img{
+    width: 10%;
+}
+;
