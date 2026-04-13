@@ -119,7 +119,7 @@
     align-items: center;
     flex-flow: row wrap;
 }
-.m-index #precio{
+#precio{
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -143,12 +143,9 @@
     height: 8%;
 }
 .h-catalogo{
-    width: 100%;
-    height: 4em;
+    height: 5.5em;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+    flex-flow: column nowrap;
 }
 
 .h-catalogo nav{
@@ -181,7 +178,7 @@
 
 .h-catalogo .options{
     width: 100%;
-    height: 2rem;
+    height: 95%;
     background-color: #007bff;
     display: flex;
     flex-flow: row nowrap;
@@ -199,4 +196,41 @@
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+    background-color: white;
+    border: none;
+    color: #0F2D2C;
+    font-size: 0.8rem;
+}
+.btn ol{
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+.h-catalogo .options .btn:active{
+    background-color: #0F2D2C;
+    color: white;
+}
+.m-catalogo{
+    margin-top: 2rem;
+}
+.m-catalogo section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.m-catalogo section div{
+    height: 12rem;
+    width: 40%;
+    border: 1px solid blue;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.m-catalogo section img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 15px;
 }
