@@ -1,0 +1,61 @@
+.h-index {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.h-index nav, .h-index .search{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.h-index nav{
+    background-color: red;
+    height: 2.5rem;
+}
+.h-index nav .burguer{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    background-color: purple;
+
+}
+.h-index nav div{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.h-index nav div h1{
+    color: white;
+    font-size: 1.5rem;
+}
+.h-index nav img{
+    width: 10%;
+    height: 100%;
+    background-color: white;
+}
+.h-index .search{
+    background-color: blue;
+    height: 2.5rem;
+}
+.h-index .search table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.h-index .search table input{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 20%;
+}

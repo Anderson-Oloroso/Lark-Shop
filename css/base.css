@@ -6,6 +6,7 @@
 
 --color-text: #EAF4F2; /* texto principal / --color-text-muted: #B8D1CB; / iconos/labels secundarios / --color-white: #FFFFFF; / contrastes puntuales */ 
 --border-color:1px solid black;
+--text-family: 'Inter', system-ui, sans-serif;
 }
 * {
     margin: 0;
@@ -20,51 +21,12 @@ body{
     align-items: center;
     background: rgb(122, 255, 122);
     justify-content: center;
+    text-align: center;
+    font-family:'Open Sans';
 }
-.home {
+.header{
     width: 100%;
-    height: 5em;
+    height: auto;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-}
-.home nav, .home .search{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-.home nav{
-    background-color: red;
-    height: 2.5rem;
-}
-.home .search{
-    background-color: blue;
-    height: 2.5rem;
-}
-.home nav .burguer{
-    width: 10%;
-    height: 100%;
-    display: flex;
-    background-color: purple;
-
-}
-.home nav div{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-.home nav div h1{
-    color: white;
-    font-size: 1.5rem;
-}
-.home nav img{
-    width: 10%;
-    height: 100%;
-    background-color: white;
 }
