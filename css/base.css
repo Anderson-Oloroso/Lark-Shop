@@ -1,32 +1,34 @@
-:root { --color-bg: #0F2D2C; /* fondo app / --color-surface: #1E3D3B; / panel/menú / --color-surface-2: #234946; / tarjetas/botones neutros / --color-border: #2A5450; / divisores/bordes sutiles */
+:root { --color-bg:  rgb(245, 247, 246); /* fondo app / --color-surface: #1E3D3B; / panel/menú / --color-surface-2: #234946; / tarjetas/botones neutros / --color-border: #2A5450; / divisores/bordes sutiles */
 
 --color-primary: #5FB37A; /* botón “Todos los productos” / --color-primary-600: #52A66E; / hover / --color-primary-700: #469A63; / active */
 
 --color-accent: #A7F063; /* badge circular verde-lima / --color-accent-700: #89D94E; / hover */
 
---color-text: #EAF4F2; /* texto principal / --color-text-muted: #B8D1CB; / iconos/labels secundarios / --color-white: #FFFFFF; / contrastes puntuales */ 
+--color-text: rgb(54, 66, 64); /* texto principal / --color-text-muted: #B8D1CB; / iconos/labels secundarios / --color-white: #FFFFFF; / contrastes puntuales */ 
 --border-color:1px solid black;
 --text-family: 'Inter', system-ui, sans-serif;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    background: rgb(122, 255, 122);
+    background: var(--color-bg);
     justify-content: center;
     text-align: center;
     font-family:'Open Sans';
 }
-.header{
+h1{
+    color: white;
+    font-size: 1.5rem;
+}
+h2{
+    color: #0F2D2C;
+    font-size: 1.2rem;
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: column wrap;
+    margin-left: 1rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+p{
+    color: #0F2D2C;
+    font-size: 0.8rem;
 }

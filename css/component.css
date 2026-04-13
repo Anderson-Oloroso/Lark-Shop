@@ -32,30 +32,113 @@
     align-items: center;
     justify-content: center;
 }
-.h-index nav div h1{
-    color: white;
-    font-size: 1.5rem;
-}
 .h-index nav img{
     width: 10%;
     height: 100%;
     background-color: white;
 }
-.h-index .search{
-    background-color: blue;
+.search{
+    position: relative;
+    width: 100%;
     height: 2.5rem;
 }
-.h-index .search table{
+
+.search-input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    padding: 15px 20px 15px 50px;
+    height: 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 5px silver;
+}
+
+.search-input:hover {
+    border-color: #bdbdbd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    left: 35px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #757575;
+    pointer-events: none;
+    }
+
+.search-input::placeholder {
+    color: #9e9e9e;
+}
+
+.m-index{
+    margin-top: 1rem;
+}
+
+.m-index section{
     width: 100%;
-    height: 100%;
+    height: 6rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+.m-index section div{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color:  rgb(160, 221, 207);
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.h-index .search table input{
-    width: 80%;
-    height: 100%;
-    background-color: transparent;
-    border-radius: 20%;
+.m-index section img{
+    width: 40%;
+    background-color: silver;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.m-index .novedades{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.m-index #precio{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.m-index .novedades div{
+    position: relative;
+    height: 15rem;
+    width: 45%;
+    border: 1px solid blue;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.m-index .novedades img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+.m-index .novedades p{
+    height: 8%;
 }
