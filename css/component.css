@@ -264,14 +264,17 @@
 
 .m-perfil .info img{
     width: 40%;
+    border-radius: 50%;
 }
 .m-perfil .info h2{
     margin: 0;
     text-align: center;
     font-size: 1.5rem;
 }
-.m-perfil p{
+.m-perfil .info p{
     font-size: 1rem;
+    width: 100%;
+    text-align: center;
 }
 .m-perfil section{
     width: 100%;
@@ -282,18 +285,25 @@
     flex-flow: row wrap;
 }
 .m-perfil section div{
+    padding: 10px;
     margin-top: 10px;
     height: 5rem;
     width: 40%;
     border: 1px solid blue;
-
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
 }
-.m-perfil section img{
-    width: 50%;
-    height: 50%;
+.m-perfil section div img{
+    width: 40%;
+    height: 70%;
     padding: 5px;
     object-fit: contain;
     border-radius: 15px;
+}
+.m-perfil section p{
+    text-align: left;
+    font-size: 1rem;
+    height: 30%;
 }
