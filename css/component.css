@@ -1,4 +1,4 @@
-.h-index {
+.h-index{
     width: 100%;
     height: 5em;
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
 }
-.h-index nav{
+.h-index nav, .h-checkout nav{
     background-color: red;
     height: 2.5rem;
 }
@@ -84,7 +84,7 @@
     margin-top: 1rem;
 }
 
-.m-index section{
+.m-index section, .m-checkout section{
     width: 100%;
     height: 6rem;
     display: flex;
@@ -93,7 +93,7 @@
     align-items: center;
     gap: 5px;
 }
-.m-index section div{
+.m-index section div, .m-checkout section a{
     width: 28%;
     height: 100%;
     display: flex;
@@ -306,4 +306,152 @@
     text-align: left;
     font-size: 1rem;
     height: 30%;
+}
+.h-checkout{
+    width: 100%;
+    height: 4rem;
+    background-color: red;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.h-checkout h1{
+    width: 85%;
+}
+.h-checkout a{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    background-color:#007bff;
+    flex-flow: column  nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.m-checkout{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.m-checkout form{
+    margin: 0;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.m-checkout form label{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+}
+.m-checkout form input {
+    width: 95%;
+    height: 2.5rem;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+.m-checkout section img{
+    width: 60%;
+    height: 60%;
+    background-color: silver;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.m-checkout section a:nth-child(1){
+    background:  rgb(45, 155, 129);
+    transition-duration: 0.01s;
+}
+.m-checkout section a:nth-child(1) p{
+    color: white;
+    font-weight: bold;
+}
+.m-checkout article{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background: #a6f5f1;
+    border-radius: 15px;
+}
+.m-checkout article div, .m-checkout article .total{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.m-checkout article div img{
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+}
+.m-checkout article div .detalle{
+    text-align: left;
+    padding: 8px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.m-checkout .detalle p{
+    width: 100%;
+    height: 60%;
+    font-weight: bold;
+}
+.m-checkout .detalle #cantidad{
+    font-weight: normal;
+    color: silver;
+    height: 40%;
+}
+.m-checkout article #precio{
+    width: 10%;
+}
+.m-checkout article .total{
+    border-top: 2px solid black;
+    width: 88%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.m-checkout article .total span{
+    width: 50%;
+    color: #0F2D2C;
+    font-weight: bold;
+}
+.m-checkout article .total #total{
+    text-align: left;
+}
+
+.m-checkout article .total #cantidad{
+    text-align: right;
+}
+.m-checkout article{
+    box-shadow: 0px 0px 15px silver;
+}
+.m-checkout button{
+    margin-top: 1rem;
+    width: 90%;
+    height: 3rem;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
 }

@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-flow: column wrap;
 }
+
 .footer-nav{
     flex-flow: row wrap;
     width: 100%;

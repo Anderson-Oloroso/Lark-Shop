@@ -15,11 +15,14 @@ body{
     text-align: center;
     font-family:'Open Sans';
 }
+button{
+    font-family:'Open Sans';
+}
 h1{
     color: white;
     font-size: 1.5rem;
 }
-h2{
+h2, label{
     color: #0F2D2C;
     font-size: 1.2rem;
     width: 100%;

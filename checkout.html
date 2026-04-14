@@ -14,6 +14,64 @@
     <title>Checkout</title>
 </head>
 <body>
-    
+    <header class="header h-checkout">
+        <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </a>
+        <h1>Checkout</h1>
+    </header>
+    <main class="main m-checkout">
+        <h2>Envio</h2>
+        <form action="submit">
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" id="name" placeholder="Ingresa tu nombre completo" required>
+            <label for="direction">Dirección</label>
+            <input type="text" name="direction" id="direction" placeholder="Ingresa tu Dirección" required>
+            <label for="city" >Ciudad</label>
+            <input type="text" name="city" id="city" placeholder="Tu ciudad" required>
+        </form>
+        <h2>Método de pago</h2>
+        <section>
+            <a>
+                <img src="img/card.png" alt="Icono de la opcion abrigo">
+                <p>Visa</p>
+            </a>
+            <a>
+                <img src="img/mastercard.png" alt="Icono de la opcion camisas">
+                <p>Mastercard</p>
+            </a>
+            <a>
+                <img src="img/paypal.png" alt="Imagen de la opcion jeans">
+                <p>Paypal</p>
+            </a>
+        </section>
+        <article>
+            <h2>Resumen de tu orden</h2>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVJX5I1G4m_hQS4vcr8SW_wrac1umT7YhZug&s" alt="Imagen de zapatillas deportivas">
+                <div class="detalle">
+                    <p>Zapatillas deportivas</p>
+                    <p id="cantidad">Cantidad: 1</p>
+                </div>
+                <p id="precio">$120.00</p>
+            </div>
+            <div>
+                <img src="https://novera.com.ar/wp-content/uploads/2024/10/AURICULARES_NAU-Y100-BG.png" alt="Imagen de auriculares premium">
+                <div class="detalle">
+                    <p>Auriculares premium</p>
+                    <p id="cantidad">Cantidad: 1</p>
+                </div>
+                <p id="precio">$99.50</p>
+            </div>
+            <div class="total">
+                <span id="total">Total</span>
+                <span id="cantidad">$224.50</span>
+            </div>
+        </article>
+        <button>Pagar: $224.50</button>
+    </main>
 </body>
 </html>
