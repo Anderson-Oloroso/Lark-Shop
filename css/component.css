@@ -39,9 +39,9 @@
     flex-flow: column wrap;
     align-items: center;
     transition: all 0.4s ease;
-    background-color: #6fffca;  
+    background-color: #9ef9d8;  
     border-radius: 0 0 16px 16px;
-    padding: 5px;
+    padding: 10px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
     z-index: 99;  
 }
@@ -50,7 +50,7 @@
     height: 3rem;
     background-color: wheat;
     align-self: self-start;
-    margin: 0;
+    margin-left: 1rem;
     padding: 0;
 }
 
@@ -62,6 +62,7 @@
     padding: 0;
     text-decoration: none;
     font-size: 1rem;
+    color: #0F2D2C;
 }
 .mobile-menu a:hover{
     font-weight: bold;
@@ -349,11 +350,12 @@
     margin-top: 10px;
     height: 5rem;
     width: 40%;
-    border: 1px solid blue;
+    background-color: white;
     margin-bottom: 5px;
     border-radius: 15px;
     display: flex;
     flex-flow: column wrap;
+    box-shadow: 0px 0px 10px #206865;
 }
 .m-perfil section div img{
     width: 40%;
@@ -591,6 +593,7 @@
     flex-flow: column nowrap;
     height: 100%;
     width: 15%;
+    padding-right: 1rem;
 }
 .m-carrito article div .eliminar .btn-eliminar{
     height: 50%;
