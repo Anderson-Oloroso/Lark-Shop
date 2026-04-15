@@ -505,7 +505,7 @@
     height:30%;
 }
 
-.m-carrito article div #subt{
+.m-carrito article div #subt,.m-historial article div #subt{
     color: silver;
     width: 100%;
     font-weight: normal;
@@ -740,4 +740,94 @@
     height: 80%;
     object-fit: contain;
     border-radius: 15px;
+}
+.m-historial{
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.m-historial{
+    gap: 10px;
+}
+.m-historial article{
+    width: 90%;
+    height: 6rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px silver;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 5px;
+    padding: 5px;
+}
+.m-historial article section{
+    width: 100%;
+    height: 3rem;
+}
+.m-historial .orden-precio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-historial .orden-precio #contenido{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: left;
+}
+.m-historial .orden-precio #contenido h2{
+    text-align: left;
+    margin: 0;
+    font-size: 1rem;
+}
+.m-historial .orden-precio div{
+    width: 30%;
+    height: 100%;
+}
+.m-historial .estado-boton div p{
+    padding: 6px;
+    border-radius: 5px;
+}
+#g{
+    color:green;
+    background-color: rgba(81, 255, 0, 0.192);
+}
+#y{
+    color: rgb(255, 145, 0);
+    background-color: rgba(255, 208, 0, 0.192);
+}
+#r{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.192);
+}
+.m-historial article .estado-boton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.m-historial article .estado-boton div{
+    width: 70%;
+    height: 100%;
+    align-items:center;
+    justify-content: left;
+    display: flex;
+    text-align: left;
+}
+.m-historial article .estado-boton button{
+    border: 1px solid silver;
+    border-radius: 5px;
+    height: 2rem;
+    width: 30%;
+    color: #0F2D2C;
+    background-color: #014e4c23;
 }

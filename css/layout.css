@@ -17,42 +17,28 @@ body{
 }
 
 .footer-nav{
-    flex-flow: row wrap;
-    width: 100%;
-    height: 4rem;
-    background-color: aqua;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    padding: 8px 0;
-    position: fixed;
-    bottom: 0;
-    gap: 15px;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(141, 252, 218);
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  gap: 15px;
 }
 .footer-nav a{
-    text-decoration: none;
-    width: 15%;
-    font-size: 0.8rem;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+  text-decoration: none;
+  width: 15%;
+  font-size: 0.8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 .footer-nav a svg{
-    width: 40%;
-}
-.footer-nav a:hover {
-  color: #000;
+  width: 40%;
 }
 
-.footer-nav a:hover svg {
-  stroke: #000;
-}
-
-.footer-nav a:nth-child(5) {
-  color: #000;
-  font-weight: 600;
-}
-
-.footer-nav a:nth-child(5) svg {
-  stroke: #000;
-}
+ 
