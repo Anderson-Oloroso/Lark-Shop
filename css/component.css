@@ -1,6 +1,6 @@
 .h-index{
     width: 100%;
-    height: 5em;
+    height: 6.5em;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -15,17 +15,17 @@
 }
 .h-index nav, .h-checkout nav{
     background-color: red;
-    height: 2.5rem;
+    height: 4rem;
 }
 .h-index nav .burguer{
-    width: 10%;
+    width: 15%;
     height: 100%;
     display: flex;
-    background-color: purple;
+    background-color: #007bff;
 
 }
 .h-index nav div{
-    width: 80%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -33,7 +33,7 @@
     justify-content: center;
 }
 .h-index nav img{
-    width: 10%;
+    width: 15%;
     height: 100%;
     background-color: white;
 }
@@ -166,7 +166,10 @@
     width: 15%;
     height: 100%;
     display: flex;
-    background-color: purple;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
 
 }
 .h-catalogo nav img{
@@ -179,7 +182,7 @@
 .h-catalogo .options{
     width: 100%;
     height: 95%;
-    background-color: #007bff;
+    background-color: #206865;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -632,7 +635,7 @@
 .h-producto .burguer{
     width: 15%;
     height: 100%;
-    background-color: rebeccapurple;
+    background-color: #007bff;
 }
 .h-producto div{
     width: 70%;
