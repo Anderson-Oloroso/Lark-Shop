@@ -472,7 +472,7 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-color: #007bff;
+    background-color: white;
 }
 .m-carrito article div{
     width: 100%;
@@ -568,9 +568,40 @@
     height: 100%;
 }
 .m-carrito section .total p{
+    border-top: 1px solid #0F2D2C;
     font-weight: bold;
 }
 .m-carrito #pago{
+    margin-top: 1rem;
+    width: 90%;
+    height: 3rem;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.m-vacio{
+    margin-top: 10rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.m-vacio img{
+    width: 40%;
+    border-radius: 50%;
+    padding: 40px;
+    background-color: rgb(117, 238, 182) ; 
+}
+.m-vacio h2{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.m-vacio button{
+    position: fixed;
+    bottom: 1rem;
     margin-top: 1rem;
     width: 90%;
     height: 3rem;
