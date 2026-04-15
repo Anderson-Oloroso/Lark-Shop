@@ -307,7 +307,7 @@
     font-size: 1rem;
     height: 30%;
 }
-.h-checkout{
+.h-checkout, .h-carrito{
     width: 100%;
     height: 4rem;
     background-color: red;
@@ -316,10 +316,10 @@
     justify-content: center;
     flex-flow: row wrap;
 }
-.h-checkout h1{
+.h-checkout h1, .h-carrito h1{
     width: 85%;
 }
-.h-checkout a{
+.h-checkout a, .h-carrito a{
     display: flex;
     width: 15%;
     height: 100%;
@@ -453,5 +453,131 @@
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    
+}
+.m-carrito{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.m-carrito article{
+    width: 95%;
+    height: auto;
+    display: flex;
+    border-radius: 15px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+}
+.m-carrito article div{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px;
+}
+.m-carrito img{
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+}
+.m-carrito article div{
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+.m-carrito article div .contenido{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.m-carrito article div #prod{
+    width: 100%;
+    font-size:1rem;
+    font-weight: bold;
+    height:30%;
+}
+
+.m-carrito article div #subt{
+    color: silver;
+    width: 100%;
+    font-weight: normal;
+    height: 30%;
+}
+.m-carrito article div .cantidad{
+    width: 100%;
+    height: 40%;
+    gap: 10px;
+}
+.m-carrito article div .cantidad button{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 90px 90px 90px 90px;
+}
+.m-carrito article div .eliminar{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 15%;
+}
+.m-carrito article div .eliminar .btn-eliminar{
+    height: 50%;
+    width: 100%;
+}
+.m-carrito article div .eliminar .total{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2px;
+}
+.m-carrito section{
+    width: 99%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    box-shadow: 0px 0px 10px silver;
+}
+.m-carrito section div{
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+.m-carrito section p{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.m-carrito section #precio{
+    width: 15%;
+    height: 100%;
+}
+.m-carrito section .total p{
+    font-weight: bold;
+}
+.m-carrito #pago{
+    margin-top: 1rem;
+    width: 90%;
+    height: 3rem;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
