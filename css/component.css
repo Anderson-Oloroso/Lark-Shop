@@ -220,7 +220,7 @@
 .h-catalogo div{
     width: 70%;
 }
-.h-catalogo nav .back{
+.h-catalogo nav .back, .h-faq nav .back{
     width: 15%;
     height: 100%;
     display: flex;
@@ -900,4 +900,95 @@ a{
     width: 30%;
     color: #0F2D2C;
     background-color: #014e4c23;
+}
+.h-faq{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.h-faq nav{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+
+}
+.h-faq img{
+    width: 15%;
+    padding: 10px;
+    background-color: white;
+}
+.h-faq nav div{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+}
+.m-faq{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.m-faq section{
+    display: grid;
+    grid-template-columns: repeat(1, 16rem);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+.m-faq section div{
+    padding: 5px;
+    border: 1px solid;
+    display: flex;
+    margin: 0;
+}
+.content{
+    background-color:#206865;
+    border-radius: 5px;
+}
+.content p{
+    color: white;
+}
+.card{
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px silver;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+.card button{
+    margin-top: 2rem;
+    color: white;
+    background-color: green;
+    border: 1px solid;
+    width: 8rem;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.card button:hover{
+    box-shadow: 0px 0px 10px silver;
+    font-weight: bold;
+    transition-duration: 0s;
+}
+.card input{
+    height: 4rem;
 }
