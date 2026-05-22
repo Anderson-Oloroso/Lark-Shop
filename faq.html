@@ -84,5 +84,34 @@
             <input type="text">
         </div>
     </footer>
+    <script>
+        (function(){
+            const section = document.querySelector('.m-faq section');
+            if(!section) return;
+            const children = Array.from(section.children);
+            children.forEach((el, i)=>{
+                if(el.classList && el.classList.contains('content')) return;
+                const next = el.nextElementSibling;
+                if(next && next.classList && next.classList.contains('content')){
+                    el.setAttribute('role','button');
+                    el.setAttribute('tabindex','0');
+                    el.setAttribute('aria-expanded','false');
+                    el.addEventListener('click', ()=> toggle(el,next));
+                    el.addEventListener('keydown', (e)=>{
+                        if(e.key==='Enter' || e.key===' '){ e.preventDefault(); toggle(el,next); }
+                    });
+                }
+            });
+            function toggle(q,a){
+                const open = a.classList.toggle('open');
+                q.setAttribute('aria-expanded', open ? 'true' : 'false');
+                if(open){
+                    a.style.maxHeight = a.scrollHeight + 'px';
+                } else {
+                    a.style.maxHeight = null;
+                }
+            }
+        })();
+    </script>
 </body>
 </html>
